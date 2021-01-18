@@ -1,0 +1,21 @@
+:root {
+  --targetX: 0px;
+  --targetY: 0px;
+}
+
+.star-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@keyframes starAnimate {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: var(--targetY);
+    left: var(--targetX);
+  }
+}
